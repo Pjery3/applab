@@ -1,0 +1,259 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?ns7138");
+  src: url("../fonts/icomoon.eot?ns7138#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?ns7138") format("truetype"), url("../fonts/icomoon.woff?ns7138") format("woff"), url("../fonts/icomoon.svg?ns7138#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check-circle-o:before {
+  content: "\f05d";
+}
+
+.icon-github-square:before {
+  content: "\f092";
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+
+.icon-hashtag:before {
+  content: "\f292";
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #616368;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 600;
+  color: #242f51;
+}
+
+img {
+  display: block;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: #242f51;
+  text-decoration: none;
+}
+
+.header {
+  padding: 65px 0 10px;
+  background-color: #fdfdfe;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner .header__logo {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.header__inner .header__logo span {
+  color: #fcae61;
+}
+
+.header__inner .header__nav {
+  margin-left: auto;
+}
+
+.header__inner .header__nav-menu {
+  font-size: 16px;
+}
+
+.header__inner .header__nav-menu li {
+  display: inline-block;
+}
+
+.header__inner .header__nav-menu li + li {
+  margin-left: 20px;
+}
+
+.header__inner .header__nav-menu li a {
+  padding: 10px;
+}
+
+.header__inner .header__btn {
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 40px;
+}
+
+.header__inner .header__btn a {
+  color: #fff;
+  padding: 21px 58px 21px 41px;
+  background-color: #2500f9;
+  border-radius: 30px;
+}
+
+.app {
+  padding-top: 10px;
+  background-color: #fdfdfe;
+  background: url(../images/app-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  min-height: 800px;
+  z-index: -5;
+}
+
+.app__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__inner .app__about {
+  max-width: 530px;
+}
+
+.app__inner .app__about-pre {
+  position: relative;
+  padding: 6px 48px 6px;
+  border-radius: 15px;
+  background-color: #e2eaed;
+  max-width: 375px;
+  color: #242f51;
+  margin-bottom: 20px;
+}
+
+.app__inner .app__about-pre .icon-check-circle-o {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  padding: 10px;
+  color: #fff;
+  background-color: #feaa25;
+  border-radius: 50%;
+}
+
+.app__inner .app__about-title {
+  font-size: 60px;
+  line-height: 75px;
+  margin-bottom: 30px;
+}
+
+.app__inner .app__about-descr {
+  margin-bottom: 60px;
+}
+
+.app__inner .app__about-links {
+  font-size: 16px;
+}
+
+.app__inner .app__about-links .try-free {
+  font-weight: 700;
+  color: #fff;
+  padding: 21px 58px 21px 41px;
+  background-color: #2500f9;
+  border-radius: 30px;
+}
+
+.app__inner .app__about-links .watch-demo {
+  margin-left: 25px;
+  color: #2500f9;
+}
+
+.app__inner .app__phone img {
+  width: 446px;
+  height: 816px;
+}
+
+.partners {
+  padding: 116px 0 140px;
+}
+
+.partners__title {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #242f51;
+  font-size: 16px;
+}
+
+.partners__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners__images img {
+  height: 50px;
+}
+
+.partners__images .partners-img {
+  height: 90px;
+}
