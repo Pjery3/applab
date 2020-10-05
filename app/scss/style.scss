@@ -152,16 +152,6 @@
                 align-items: center;
                 margin-bottom: 63px;
                 .features__item-img {
-                    width: 87px;
-                    height: 87px;
-                    border-radius: 50%;
-                    position: relative;
-                    img {
-                        position: absolute;
-                        left: 44px;
-                        top: 42px;
-                        transform: translate(-50%, -50%);
-                    }
                     &.features__img-speed {
                         background-color: rgb(255, 236, 239);
                     }
@@ -173,11 +163,8 @@
                     }
                 }
                 .features__item-text {
-                    max-width: 300px;
                     margin-left: 30px;
                     .features__item-title {
-                        font-size: 20px;
-                        margin-bottom: 10px;
                         &--red {
                             color: #f55767;
                         }
@@ -188,12 +175,85 @@
                             color: #40975f;
                         }
                     }
-                    .features__item-descr {
-                    }
                 }
             }
         }
     }
 }
+
+.jackpots {
+    padding: 70px 0 110px;
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+        &-title {
+            font-size: 40px;
+            line-height: 50px;
+            max-width: 505px;
+            padding-right: 50px;
+            border-right: 1px solid #ccc;
+        }
+        &-descr {
+            margin-left: 50px;
+            max-width: 470px;
+        }
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        .jackpots__item {
+            max-width: 300px;
+            &-img {
+                margin-bottom: 30px;
+                &--red {
+                    background-color: rgb(255, 236, 239);
+                }
+                &--blue {
+                    background-color: #f4f4ff;
+                }
+                &--green {
+                    background-color: #e4ffee;
+                }
+            }
+            &-title {
+                &--red {
+                    color: #f55767;
+                }
+                &--blue {
+                    color: $purple;
+                }
+                &--green {
+                    color: #40975f;
+                }
+            }
+            &-descr {
+            }
+        }
+    }
+}
+// .advantages {
+//     text-align: center;
+//     &__title {
+//         font-size: 36px;
+//         line-height: 46px;
+//         margin-bottom: 15px;
+//         max-width: 470px;
+//     }
+//     &__descr {
+//         font-size: 16px;
+//         margin-bottom: 88px;
+//     }
+//     &__items {
+//         .advantages__item {
+//             &-img {
+//             }
+//             &-title {
+//             }
+//             &-descr {
+//             }
+//         }
+//     }
+// }
 
 @import "_media.scss";

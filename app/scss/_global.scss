@@ -1,36 +1,58 @@
-html{
+html {
     box-sizing: border-box;
 }
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: inherit;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
     color: $text;
 }
 
-.container{
+.container {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
-.title{
+.title {
     font-weight: 600;
     color: $title;
 }
-img{
+img {
     display: block;
 }
-ul,li{
+ul,
+li {
     list-style: none;
 }
-a{
+a {
     color: $title;
     text-decoration: none;
+}
+.item-block {
+    &__img {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        position: relative;
+        img {
+            position: absolute;
+            left: 44px;
+            top: 42px;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__text {
+        max-width: 300px;
+        &-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
 }
