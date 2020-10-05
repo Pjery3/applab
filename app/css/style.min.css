@@ -257,3 +257,90 @@ a {
 .partners__images .partners-img {
   height: 90px;
 }
+
+.features__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__inner .features__info {
+  max-width: 435px;
+}
+
+.features__inner .features__info-title {
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 15px;
+}
+
+.features__inner .features__info-descr {
+  font-size: 16px;
+  margin-bottom: 70px;
+}
+
+.features__inner .features__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 63px;
+}
+
+.features__inner .features__info-item .features__item-img {
+  width: 87px;
+  height: 87px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.features__inner .features__info-item .features__item-img img {
+  position: absolute;
+  left: 44px;
+  top: 42px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.features__inner .features__info-item .features__item-img.features__img-speed {
+  background-color: #ffecef;
+}
+
+.features__inner .features__info-item .features__item-img.features__img-prot {
+  background-color: #f4f4ff;
+}
+
+.features__inner .features__info-item .features__item-img.features__img-vector {
+  background-color: #e4ffee;
+}
+
+.features__inner .features__info-item .features__item-text {
+  max-width: 300px;
+  margin-left: 30px;
+}
+
+.features__inner .features__info-item .features__item-text .features__item-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.features__inner .features__info-item .features__item-text .features__item-title--red {
+  color: #f55767;
+}
+
+.features__inner .features__info-item .features__item-text .features__item-title--blue {
+  color: #2500f9;
+}
+
+.features__inner .features__info-item .features__item-text .features__item-title--green {
+  color: #40975f;
+}

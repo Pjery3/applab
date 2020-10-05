@@ -120,15 +120,80 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        img{
+        img {
             height: 50px;
         }
-        .partners-img{
+        .partners-img {
             height: 90px;
         }
     }
 }
 
-
+.features {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .features__img {
+        }
+        .features__info {
+            max-width: 435px;
+            &-title {
+                font-size: 36px;
+                line-height: 46px;
+                margin-bottom: 15px;
+            }
+            &-descr {
+                font-size: 16px;
+                margin-bottom: 70px;
+            }
+            &-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 63px;
+                .features__item-img {
+                    width: 87px;
+                    height: 87px;
+                    border-radius: 50%;
+                    position: relative;
+                    img {
+                        position: absolute;
+                        left: 44px;
+                        top: 42px;
+                        transform: translate(-50%, -50%);
+                    }
+                    &.features__img-speed {
+                        background-color: rgb(255, 236, 239);
+                    }
+                    &.features__img-prot {
+                        background-color: #f4f4ff;
+                    }
+                    &.features__img-vector {
+                        background-color: #e4ffee;
+                    }
+                }
+                .features__item-text {
+                    max-width: 300px;
+                    margin-left: 30px;
+                    .features__item-title {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                        &--red {
+                            color: #f55767;
+                        }
+                        &--blue {
+                            color: $purple;
+                        }
+                        &--green {
+                            color: #40975f;
+                        }
+                    }
+                    .features__item-descr {
+                    }
+                }
+            }
+        }
+    }
+}
 
 @import "_media.scss";
