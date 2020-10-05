@@ -263,28 +263,57 @@
         }
     }
 }
-// .advantages {
-//     text-align: center;
-//     &__title {
-//         font-size: 36px;
-//         line-height: 46px;
-//         margin-bottom: 15px;
-//         max-width: 470px;
-//     }
-//     &__descr {
-//         font-size: 16px;
-//         margin-bottom: 88px;
-//     }
-//     &__items {
-//         .advantages__item {
-//             &-img {
-//             }
-//             &-title {
-//             }
-//             &-descr {
-//             }
-//         }
-//     }
-// }
+.advantages {
+    text-align: center;
+    padding: 130px 0 90px;
+    &__title {
+        font-size: 36px;
+        line-height: 46px;
+        max-width: 470px;
+        margin: 0 auto 30px;
+    }
+    &__descr {
+        font-size: 16px;
+        margin: 0 auto 88px;
+        max-width: 640px;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        .advantages__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33%;
+            margin-bottom: 70px;
+            &-img {
+                margin-bottom: 35px;
+                &--pink{
+                    background-color: #ffecef;
+                }
+                &--blue{
+                    background-color: #eaf9ff;
+                }
+                &--orange{
+                    background-color: #fff6d3;
+                }
+                &--green{
+                    background-color: #e4ffee;
+                }
+                &--purple{
+                    background-color: #f4f4ff;
+                }
+                &--red{
+                    background-color: #fdeee4;
+                }
+            }
+            &-title {
+            }
+            &-descr {
+                max-width: 270px;
+            }
+        }
+    }
+}
 
 @import "_media.scss";
