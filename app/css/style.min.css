@@ -416,3 +416,43 @@ a {
 .jackpots__items .jackpots__item-title--green {
   color: #40975f;
 }
+
+.integration {
+  padding-bottom: 65px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.42);
+}
+
+.integration__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.integration__inner .integration__info {
+  max-width: 470px;
+}
+
+.integration__inner .integration__info-title {
+  font-size: 36px;
+  line-height: 46px;
+  max-width: 390px;
+  margin-bottom: 25px;
+}
+
+.integration__inner .integration__info-descr {
+  margin-bottom: 60px;
+}
+
+.integration__inner .integration__info-btn a {
+  padding: 22px 39px;
+  background-color: #2500f9;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 35px;
+}
