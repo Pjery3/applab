@@ -4,12 +4,28 @@ $(function(){
         infinite: false
     });
     
-    $('.wrapper .tab').on('click', function(event) {
+    $('.questions__tabs-wrapper .tab').on('click', function(event) {
         var id = $(this).attr('data-id');
-            $('.wrapper').find('.tab-item').removeClass('active-tab').hide();
-            $('.wrapper .tabs').find('.tab').removeClass('active');
+            $('.questions__tabs-wrapper').find('.tab-item').removeClass('active-tab').hide();
+            $('.questions__tabs-wrapper .tabs').find('.tab').removeClass('active');
             $(this).addClass('active');
             $('#'+id).addClass('active-tab').fadeIn();
             return false;
         });
 });
+
+var acc = document.getElementsByClassName("questions__accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  };
+  

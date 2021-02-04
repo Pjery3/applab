@@ -904,7 +904,8 @@ a {
   font-size: 18px;
 }
 
-.client__inner .client__product .client__members-wrapper .slick-prev, .client__inner .client__product .client__members-wrapper .slick-next {
+.client__inner .client__product .client__members-wrapper .slick-prev,
+.client__inner .client__product .client__members-wrapper .slick-next {
   position: absolute;
   top: 20px;
   font-size: 0;
@@ -917,7 +918,8 @@ a {
   cursor: pointer;
 }
 
-.client__inner .client__product .client__members-wrapper .slick-prev.slick-disabled, .client__inner .client__product .client__members-wrapper .slick-next.slick-disabled {
+.client__inner .client__product .client__members-wrapper .slick-prev.slick-disabled,
+.client__inner .client__product .client__members-wrapper .slick-next.slick-disabled {
   width: 49px;
   height: 49px;
   border: 1px solid #ccc;
@@ -960,7 +962,7 @@ a {
 
 .client__inner .client__product .client__members-wrapper .slick-next::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 1px;
   height: 30px;
   left: -10px;
@@ -977,4 +979,65 @@ a {
 .client__inner .client__product .client__members-wrapper .slick-next.slick-disabled::before {
   left: -12px;
   top: 9px;
+}
+
+.questions {
+  padding: 20px 0 100px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.44);
+}
+
+.questions__title {
+  font-size: 40px;
+  line-height: 58px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.questions__descr {
+  max-width: 650px;
+  margin: 0 auto 80px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.questions__accordion {
+  background-color: #f5f7fa;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.questions__accordion.active, .questions__accordion:hover {
+  background-color: #ccc;
+}
+
+.questions__accordion::after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.questions__accordion.active::after {
+  content: "\2212";
+}
+
+.questions__accordion-content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  background-color: #f5f7fa;
+  margin-bottom: 10px;
 }
