@@ -722,11 +722,114 @@
     }
 }
 .download {
-    &__title {
+    padding: 100px 0 105px;
+    position: relative;
+    text-align: left;
+    &__content {
+        max-width: 660px;
+        &-title {
+            font-size: 48px;
+            line-height: 58px;
+            margin-bottom: 30px;
+        }
+        &-descr {
+            margin-bottom: 50px;
+        }
+        &-links {
+            a {
+                display: inline-block;
+                & + a {
+                    margin-left: 25px;
+                }
+            }
+        }
     }
-    &__descr {
+    &__bg {
+        position: absolute;
+        right: 0;
+        top: 46px;
+        object {
+        }
+    }
+}
+
+.footer {
+    padding: 115px 0 130px;
+    background-color: #09142e;
+    text-align: center;
+    &__logo {
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 50px;
+        a {
+            color: #fff;
+        }
+        span {
+            color: #fcae61;
+        }
+    }
+    &__nav {
+        margin-bottom: 50px;
+        li {
+            display: inline-block;
+            & + li {
+                margin-left: 25px;
+            }
+            a {
+                color: #fff;
+            }
+        }
     }
     &__links {
+        margin-bottom: 85px;
+        &-facebook,
+        &-twitter,
+        &-hash,
+        &-github {
+            position: relative;
+            display: inline-block;
+            margin-left: 15px;
+            a {
+                &:after {
+                    font-size: 30px;
+                    font-family: "icomoon" !important;
+                }
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+        &-facebook {
+            a {
+                &:after {
+                    content: "\f09a";
+                }
+            }
+        }
+        &-twitter {
+            a {
+                &:after {
+                    content: "\f099";
+                }
+            }
+        }
+        &-hash {
+            transform: scale(-1,1);
+            a {
+                &:after {
+                    content: "\f292";
+                }
+            }
+        }
+        &-github {
+            a {
+                &:after {
+                    content: "\f092";
+                }
+            }
+        }
+    }
+    &__copyright {
     }
 }
 

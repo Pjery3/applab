@@ -1041,3 +1041,114 @@ a {
   background-color: #f5f7fa;
   margin-bottom: 10px;
 }
+
+.download {
+  padding: 100px 0 105px;
+  position: relative;
+  text-align: left;
+}
+
+.download__content {
+  max-width: 660px;
+}
+
+.download__content-title {
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 30px;
+}
+
+.download__content-descr {
+  margin-bottom: 50px;
+}
+
+.download__content-links a {
+  display: inline-block;
+}
+
+.download__content-links a + a {
+  margin-left: 25px;
+}
+
+.download__bg {
+  position: absolute;
+  right: 0;
+  top: 46px;
+}
+
+.footer {
+  padding: 115px 0 130px;
+  background-color: #09142e;
+  text-align: center;
+}
+
+.footer__logo {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.footer__logo a {
+  color: #fff;
+}
+
+.footer__logo span {
+  color: #fcae61;
+}
+
+.footer__nav {
+  margin-bottom: 50px;
+}
+
+.footer__nav li {
+  display: inline-block;
+}
+
+.footer__nav li + li {
+  margin-left: 25px;
+}
+
+.footer__nav li a {
+  color: #fff;
+}
+
+.footer__links {
+  margin-bottom: 85px;
+}
+
+.footer__links-facebook, .footer__links-twitter, .footer__links-hash, .footer__links-github {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.footer__links-facebook a:after, .footer__links-twitter a:after, .footer__links-hash a:after, .footer__links-github a:after {
+  font-size: 30px;
+  font-family: "icomoon" !important;
+}
+
+.footer__links-facebook a:hover, .footer__links-twitter a:hover, .footer__links-hash a:hover, .footer__links-github a:hover {
+  color: #fff;
+}
+
+.footer__links-facebook a:after {
+  content: "\f09a";
+}
+
+.footer__links-twitter a:after {
+  content: "\f099";
+}
+
+.footer__links-hash {
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.footer__links-hash a:after {
+  content: "\f292";
+}
+
+.footer__links-github a:after {
+  content: "\f092";
+}
