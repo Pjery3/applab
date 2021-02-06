@@ -195,7 +195,7 @@ a {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-  min-height: 800px;
+  min-height: 870px;
   z-index: -5;
 }
 
@@ -298,20 +298,30 @@ a {
   height: 90px;
 }
 
+.features {
+  padding: 50px 0 100px;
+}
+
 .features__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+.features__inner .features__img {
+  position: absolute;
+  left: 150px;
+}
+
 .features__inner .features__info {
-  max-width: 435px;
+  max-width: 500px;
+  margin-right: 100px;
 }
 
 .features__inner .features__info-title {
@@ -432,7 +442,7 @@ a {
 }
 
 .integration {
-  padding-bottom: 65px;
+  padding: 110px 0 170px;
   border-bottom: 1px solid rgba(204, 204, 204, 0.42);
 }
 
@@ -440,16 +450,23 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.integration__inner .integration__img {
+  position: absolute;
+  left: -125px;
 }
 
 .integration__inner .integration__info {
   max-width: 470px;
+  margin-right: 100px;
 }
 
 .integration__inner .integration__info-title {
@@ -544,16 +561,8 @@ a {
   max-width: 270px;
 }
 
-.built__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.built {
+  position: relative;
 }
 
 .built__inner .built__info {
@@ -623,7 +632,9 @@ a {
 }
 
 .built__inner .built__img {
-  max-width: 510px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .trail {
@@ -844,15 +855,28 @@ a {
 
 .client {
   padding: 155px 0 130px;
+  position: relative;
 }
 
 .client__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client__inner .client__peoples {
+  position: absolute;
+  left: 0;
 }
 
 .client__inner .client__product {
+  margin-right: 100px;
   max-width: 600px;
 }
 
